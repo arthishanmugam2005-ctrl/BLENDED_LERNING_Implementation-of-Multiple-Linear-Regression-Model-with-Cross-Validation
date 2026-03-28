@@ -10,10 +10,13 @@ To write a program to predict the price of cars using a multiple linear regressi
 
 ## Algorithm
 ```
-1.Import Libraries & Load Dataset
-2.Divide the dataset into training and testing sets.
-3.Select a suitable ML model, train it on the training data, and make predictions.
-4.Assess model performance using metrics and interpret the results.
+1.Load the dataset, separate input features (all columns except price) and the target (price), then split into training and testing sets.
+
+2.Train a Linear Regression model on the training data.
+
+3.Perform 5-fold cross-validation to evaluate model stability and compute average R².
+
+4.Predict on the test set, calculate MSE, MAE, R², and plot actual vs predicted prices to assess performance.
 ```
 ## Program:
 ```
